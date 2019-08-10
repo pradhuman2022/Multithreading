@@ -1,0 +1,38 @@
+Thread Scheduler is a Part of JVM . It is responsible to schedule thread that if multiple Threads are waiting to get chance then 
+it decides which Thread should allocate to processor. 
+
+We can'nt expect output or exact algorithm of Thread Scheduler , it varies jvm to jvm.
+
+suppose there are two threads , one is main thread and second is child thread so output may be following :
+
+ first Possibilty :- 
+ main thread
+    |
+    |
+    |
+ child Thread 
+ 
+ Second Possibilty :- 
+ child thread 
+      |
+      |
+      |
+ main Thread 
+ 
+ Third Possibiliy :- 
+ child Thread
+ Main Thread
+ child Thread
+      |
+      |
+      |
+     
+ Fourth Possibility :- 
+ Main Thread
+ Child Thread 
+ Main Thread
+     |
+     |
+     |
+     
+ 
