@@ -1,0 +1,10 @@
+Importance of Thread Class start() :
+
+start() is responsible to register the thread scheduler and all other mandtory activities , hence without executing start()
+, there is no chance of starting a new thread in java, due to this , start() is considered as "Heart of Multithreading" .
+
+what start() do :
+
+1- Register this thread with Thread Scheduler 
+2- Perform all After mandtory Activites 
+3- executes run() method
