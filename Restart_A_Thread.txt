@@ -1,0 +1,22 @@
+/* 
+ After starting a Thread if we are trying to restart the same thread then we will get runtime exception saying "illegalThreadException" .
+ */
+ 
+ class MyThread extends Thread 
+ {
+    public void run()
+    {
+      System.out.println("Child Thread") ;
+     }
+  
+  }
+  
+  class ThreadDemo 
+  {
+     public static void main(String ar[])
+     {
+       MyThread t = new MyThread() ; 
+       t.start() ;
+       t.start() ;/// here we will get exception as we restart thread 
+     }
+  }
