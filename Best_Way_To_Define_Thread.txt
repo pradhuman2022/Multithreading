@@ -1,0 +1,8 @@
+Among two of defining a Thread implement runnable interface is recommended . 
+
+In the first Approach , Our class always extends Thread class , there is no chance of extending any other class class , hence we are 
+missing inheritance benefit.
+
+But in second approach , while implementing Runnable interface we can extends any other class , hence we won't miss any inheritance benefit
+. 
+Because of Above Reason , implementing Runnable interface approach is recommended than extending Thread class .
