@@ -1,0 +1,19 @@
+Difference Between start and run Method :- 
+
+
+In case of start() , a new thread will be create which is responsible for execution of run() , But in case of direct calling of run()
+, new thread will not be create and run() will be execute like normal method .
+
+hence , in ThreadDemo.java  file , if we remove t.start() with t.run() so output is
+  child Thread 
+  child Thread
+       |
+       |
+       | 
+  Main Thread
+  Main Thread
+       |
+       | 
+       |
+       
+ 
